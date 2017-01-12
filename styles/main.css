@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	background: black;
+	color: lightgreen;
+}
+header{
+	background: #011;
+	color: lightgreen;
+	padding: 5px 15px 0 15px;
+}
+
+header h1 {
+	margin: 0;
+	display: inline;
+	color: lightgreen;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0 0 0 15px;
+	display: inline;
+}
+
+nav ul li {
+	background: #000;
+	border: 2px solid lightgreen;
+	border-radius: 4px;
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px 5px 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: lightgreen;
+}
+
+.mypanel{
+	display: inline-block;
+	margin: 1% .5%;
+	border: 1px solid lightgreen;
+	border-radius: 5px 5px 5px 5px;
+	width: 31%;
+}
+
+.mypanel .heading{
+	background: #011;
+	border-radius: 5px 5px 0 0;
+	color: lightgreen;
+	padding: 2% 4%;
+}
+
+.mypanel .body{
+	padding: 2% 4%;
+	word-break: break-all;
+	background: #000
+}
+
+footer {
+	font-size: 12px;
+	clear: both;
+}
