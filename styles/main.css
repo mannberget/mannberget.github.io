@@ -52,6 +52,7 @@ nav a:hover{
 nav #navselected{
   color: #444;
 }
+
 h1{
   text-align: center;
   font-size: 54px;
@@ -100,7 +101,7 @@ footer{
 }
 .social i{
   font-size: 200%;
-  padding: 10px 11% 0 0;
+  padding: 15px 11% 0 0;
   margin: 0;
   color: #ccc;
 }
