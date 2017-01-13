@@ -41,9 +41,12 @@ nav a{
   text-transform: uppercase;
 }
 nav a:hover{
-  color: #444;
+  color: #777;
 }
 
+nav #navselected{
+  color: #444;
+}
 h1{
   text-align: center;
   font-size: 54px;
