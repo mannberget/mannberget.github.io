@@ -2,6 +2,11 @@
   font-family: 'Alegreya', sans-serif;
 }
 
+body{
+  align-content: center;
+  margin: 10px;
+}
+
 header{
   height: 280px;
   background: url(../img/headerbg.png) center;
@@ -75,6 +80,47 @@ h1{
 
 }
 
+p.content{
+ font-size: 18px;
+}
+
+footer{
+  background-color: #222;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #111;
+  border-radius: 1px;
+}
+.social{
+  list-style-type: none;
+  text-align: center;
+}
+.social li{
+  display: inline;
+}
+.social i{
+  font-size: 200%;
+  padding: 0px 11% 0 0;
+  margin: 0;
+  color: #C3D7DF;
+}
+.social i:hover{
+  color: #F5F5F5;
+}
+footer.second{
+  border-top: 1px solid #AADCD2;
+  background-color: #ccc;
+  max-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+footer.second p{
+  margin: 0;
+  padding: 7px 0 0 0;
+  text-align: center;
+}
 
 
 @media screen and (max-width: 480px) {
