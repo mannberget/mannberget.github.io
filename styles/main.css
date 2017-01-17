@@ -28,6 +28,9 @@ header{
   width: 100%;
   display: none;
 }
+.headeralt nav ul{
+  display: flex;
+}
 
 .headeralt nav a{
   margin-left: 10px;
@@ -230,9 +233,6 @@ img {
     border-radius: 0 0 2px 2px;
     width: 40%;
   }
-  .headeralt nav:hover ul {
-    display: block;
-  }
   .headeralt nav ul li{
     text-align: center;
     margin: 0;
@@ -244,7 +244,7 @@ img {
     text-transform: capitalize;
   }
   #menu-icon{
-    display: inline-block;
+    display: block;
     position: absolute;
   }
   h1{

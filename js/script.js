@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   if(window.pageYOffset > 240) {
       $('.headeralt').slideDown(150);
   }
@@ -7,6 +7,9 @@ $(document).ready(function(){
     $('.headeralt').slideUp(150);
   }
 
+  $('#menu-icon').on('click', function(){
+    $('.headeralt nav:hover ul').slideToggle(300);
+  });
 
   $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
