@@ -12,17 +12,48 @@ body{
 
 header{
   height: 240px;
+  width: 100%;
   /*background: url(../img/headerbg.png) center;*/
   background: white;
   background-size: cover;
   border-bottom: 2px solid #aaa;
   border-radius: 1px;
 }
+.headeralt{
+  height: 70px;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+
+.headeralt nav a{
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.headeralt #navselected{
+  color: #bbb;
+}
 
 .logo{
   width: 100px;
   height: 100px;
   background: url(../img/logo.png) center;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  margin: 0px 0 0 10px;
+}
+.logo2{
+  width: 60px;
+  height: 60px;
+  background: url(../img/logo2.png) center;
   background-size: cover;
   display: inline-block;
   float: left;
@@ -52,11 +83,20 @@ nav a{
   text-decoration: none;
   text-transform: capitalize;
 }
-nav a:hover{
-  color: #F67280;
+#menu-icon{
+  display: none;
+  width: 60px;
+  height: 80px;
+  right: 5px;
+}
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
 }
 nav #navselected{
-  color: #F8B195;
+  color: rgba(0,0,0,0.5);
+}
+nav a:hover{
+  color: #F67280;
 }
 h1{
   font-family: 'Noto Sans', sans-serif;
@@ -163,7 +203,7 @@ img {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   nav ul{
     padding: 0;
     margin: 0;
@@ -176,6 +216,36 @@ img {
     text-align: left;
     font-size: 20px;
     margin: 0;
+  }
+  .headeralt nav ul{
+    display: none;
+    z-index:  1000;
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    right: 0px;
+    top: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.96);
+    border-top: none;
+    border-radius: 0 0 2px 2px;
+    width: 40%;
+  }
+  .headeralt nav:hover ul {
+    display: block;
+  }
+  .headeralt nav ul li{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .headeralt nav a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  #menu-icon{
+    display: inline-block;
+    position: absolute;
   }
   h1{
     /*margin-top: 120px;*/
