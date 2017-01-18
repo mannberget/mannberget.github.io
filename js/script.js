@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  $('.blueberry').blueberry();
   if(window.pageYOffset > 240) {
       $('.headeralt').slideDown(150);
   }

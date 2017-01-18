@@ -4,6 +4,11 @@
   /*font-family: 'Noto Sans', sans-serif;*/
 }
 
+.slides{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   align-content: center;
   margin: 0px;
@@ -27,6 +32,7 @@ header{
   top: 0;
   width: 100%;
   display: none;
+  z-index: 1000;
 }
 .headeralt nav ul{
   display: flex;
@@ -143,6 +149,15 @@ h1{
   padding: 60px;
   border: 1px solid #D4D4D4;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.blueberry li{
+  border: none;
+}
+
+.blueberry{
+  max-width: 1080px;
+  padding-top: 50px;
 }
 .panel-heading{
   margin-bottom: 40px;
