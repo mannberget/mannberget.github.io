@@ -19,10 +19,18 @@ $(document).ready(function(){
       $('.headeralt').slideUp(250);
     }
   });
-    $('body').bind({'touchmove': function(e) {
-      if(y_scroll_pos > scroll_pos_test) {
-          $('.headeralt').slideDown(250);
-      }
-  }
+  $(window).on('touchmove', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 240;             // set to whatever you want it to be
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $('.headeralt').slideDown(250);
+    }
+
+    if(y_scroll_pos < scroll_pos_test){
+      $('.headeralt').slideUp(250);
+    }
+  });
+
 });
 });
