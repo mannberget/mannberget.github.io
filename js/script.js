@@ -19,4 +19,10 @@ $(document).ready(function(){
       $('.headeralt').slideUp(250);
     }
   });
+    $('body').on({'touchmove': function() {
+      if(y_scroll_pos > scroll_pos_test) {
+          $('.headeralt').slideDown(250);
+      }
+  }
+});
 });
