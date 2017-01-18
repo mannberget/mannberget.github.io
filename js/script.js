@@ -19,7 +19,7 @@ $(document).ready(function(){
       $('.headeralt').slideUp(250);
     }
   });
-    $('body').on({'touchmove': function(e) {
+    $('body').bind({'touchmove': function(e) {
       if(y_scroll_pos > scroll_pos_test) {
           $('.headeralt').slideDown(250);
       }
