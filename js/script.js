@@ -1,16 +1,11 @@
 $(document).ready(function(){
 
-  $('.blueberry').blueberry();
   if(window.pageYOffset > 240) {
       $('.headeralt').slideDown(150);
   }
   else{
     $('.headeralt').slideUp(150);
   }
-
-  $('#menu-icon').on('click', function(){
-    $('.headeralt nav:hover ul').slideToggle(300);
-  });
 
   $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
@@ -19,7 +14,8 @@ $(document).ready(function(){
     if(y_scroll_pos > scroll_pos_test) {
         $('.headeralt').slideDown(250);
     }
-    else{
+
+    if(y_scroll_pos < scroll_pos_test){
       $('.headeralt').slideUp(250);
     }
   });

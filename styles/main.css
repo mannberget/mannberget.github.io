@@ -3,12 +3,6 @@
   font-family: 'Noto Serif', serif;
   /*font-family: 'Noto Sans', sans-serif;*/
 }
-
-.slides{
-  margin: 0;
-  padding: 0;
-}
-
 body{
   align-content: center;
   margin: 0px;
@@ -92,13 +86,13 @@ nav a{
   text-decoration: none;
   text-transform: capitalize;
 }
-#menu-icon{
+.menu-icon{
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   right: 5px;
 }
-a:hover#menu-icon{
+a:hover.menu-icon{
   border-radius: 4px 4px 0 0;
 }
 nav #navselected{
@@ -151,14 +145,6 @@ h1{
   box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.blueberry li{
-  border: none;
-}
-
-.blueberry{
-  max-width: 1080px;
-  padding-top: 50px;
-}
 .panel-heading{
   margin-bottom: 40px;
   color: #111;
@@ -222,6 +208,9 @@ img {
 
 
 @media screen and (max-width: 760px) {
+  .headeralt nav ul{
+    display: none;
+  }
   nav ul{
     padding: 0;
     margin: 0;
@@ -232,33 +221,43 @@ img {
   }
   nav ul li{
     text-align: left;
-    font-size: 20px;
     margin: 0;
   }
-  .headeralt nav ul{
+  nav ul, nav:active ul{
     display: none;
     z-index:  1000;
     position: absolute;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.9);
+    background: white;
     right: 0px;
     top: 70px;
     border: 2px solid rgba(0, 0, 0, 0.96);
-    border-top: none;
     border-radius: 0 0 2px 2px;
     width: 40%;
   }
-  .headeralt nav ul li{
+  .headeralt nav ul, nav:active ul{
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+  }
+  nav:hover ul {
+    display: block;
+  }
+   nav ul li{
     text-align: center;
     margin: 0;
     padding: 0;
   }
-  .headeralt nav a{
-    font-size: 20px;
+   nav a{
+    font-size: 24px;
     text-decoration: none;
     text-transform: capitalize;
   }
-  #menu-icon{
+  .headeralt nav a{
+   font-size: 22px;
+   text-decoration: none;
+   text-transform: capitalize;
+ }
+  .menu-icon{
     display: block;
     position: absolute;
   }
