@@ -9,7 +9,7 @@ img.onload = function(){
 	bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
 }
 
-img.src = 'https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/132507194_400852174460810_2580274671560258950_n.jpg?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=_j-holNCsjAAX-1Xiul&_nc_ht=scontent-arn2-1.xx&oh=d530fd783162059a54ca4517e26335ef&oe=6009C99F';
+img.src = 'papper.jpg';
 
 function detectLeftButton(event) {
     if ('buttons' in event) {
