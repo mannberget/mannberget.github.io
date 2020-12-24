@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+#bridge {
+  display: block;
+  margin: 0 auto;
+  background-image: url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/132874467_161005719102571_9119093199293513999_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=7QwfnQrqFOwAX9ybj4e&_nc_ht=scontent-arn2-1.xx&oh=7ca2ac42e877f65a6fd720a314f8e8a3&oe=600B17FF");
+  background-image: -webkit-image-set(url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/132874467_161005719102571_9119093199293513999_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=7QwfnQrqFOwAX9ybj4e&_nc_ht=scontent-arn2-1.xx&oh=7ca2ac42e877f65a6fd720a314f8e8a3&oe=600B17FF") 1x, url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/132874467_161005719102571_9119093199293513999_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=7QwfnQrqFOwAX9ybj4e&_nc_ht=scontent-arn2-1.xx&oh=7ca2ac42e877f65a6fd720a314f8e8a3&oe=600B17FF") 2x);
+  background-size: cover;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  cursor: crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+}
+
+#bridgeContainer {
+  text-align: center;
+  font-family: Avenir, sans-serif;
+}
+
+#bridgeContainer figcaption {
+  margin-top: 2rem;
+}
