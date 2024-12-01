@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dec 13</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .overlay-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff5555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .overlay-button:hover {
+            background-color: #ff7777; /* Slightly lighter on hover */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dec 13</h1>
+    <div class="image-container">
+        <button class="overlay-button" onclick="openImage()">Öppna luckan</button>
+        <img id="day-image" src="../images/day13.jpg" alt="Image for Dec 13" style="display: none;">
+    </div>
+    <footer>
+        <a href="../index.html">Tillbaka till kalendern</a>
+    </footer>
+    <script>
+        function openImage() {
+            document.querySelector('.overlay-button').style.display = 'none';
+            document.getElementById('day-image').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

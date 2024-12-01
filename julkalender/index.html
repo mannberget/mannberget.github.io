@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julkalender 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Julkalender</h1>
+    <div class="button-container">
+        <script>
+            const today = new Date();
+            const currentYear = 2024;
+            const startDate = new Date(currentYear, 11, 1); // December 1, 2024 (Month is 0-indexed)
+
+            for (let i = 1; i <= 24; i++) {
+                const dayDate = new Date(currentYear, 11, i); // December i, 2024
+                const isEnabled = today >= dayDate;
+                // const isEnabled = true;
+
+                document.write(`
+                    <a href="days/day${i}.html" 
+                       class="day-button ${isEnabled ? '' : 'disabled'}" 
+                       ${isEnabled ? '' : 'onclick="return false;"'}>
+                        Dec ${i}
+                    </a>
+                `);
+            }
+        </script>
+    </div>
+</body>
+</html>
+
